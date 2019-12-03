@@ -1,4 +1,27 @@
-//定義全域變數，num定義後面的變數代表"浮點數或整數"
+import "dart:html";
+import "dart:math" as math;
+
+void main() {
+  querySelector("#submit").onClick.listen((e) => calcRabbits());
+}
+
+calcRabbits() {
+  // binding variables to html elements:
+  InputElement yearsInput = querySelector("#years");
+  LabelElement output = querySelector("#output");
+  // getting input
+  String yearsString = yearsInput.value;
+  int years = int.parse(yearsString);
+  // calculating and setting output:
+   output.innerHtml = "${calculateRabbits(years)}";
+}
+
+int calculateRabbits(int years) {
+  return (years*1.8+32)
+      .round()
+      .toInt();
+}
+/*定義全域變數，num定義後面的變數代表"浮點數或整數"
 num Celsius;
 num Fahrenheit;
 num C;
@@ -20,3 +43,4 @@ void main() {
         print("若攝氏溫度=$Celsius°C時，華氏溫度=$F°F。");
         print("若華氏溫度=$Fahrenheit°F時，攝氏溫度=$C°C。");
 }
+*/
