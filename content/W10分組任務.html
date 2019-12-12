@@ -143,7 +143,11 @@ img.add_border {
                             <li><a href="./../blog/index.html">blog</a></li>
                         </ul>
                       </li>
+ master
                      <li><a href='About.html'>About</a><li class='has-children'><a href='Work.html'>Work</a><ul class='dropdown'><li><a href='W13.html'>W13</a><li><a href='W10分組任務.html'>W10分組任務</a><li><a href='W11.html'>W11</a></li>
+
+                     <li><a href='About.html'>About</a><li class='has-children'><a href='Work.html'>Work</a><ul class='dropdown'><li><a href='W10分組任務.html'>W10分組任務</a><li><a href='W11.html'>W11</a><li><a href='W12.html'>W12</a></li>
+ master
                       </ul>
                 </nav>
               </div>
@@ -157,21 +161,17 @@ img.add_border {
     <div id="tipue_search_content">W13 << <a href='W13.html'>Previous</a> <a href='W11.html'>Next</a> >> W11<br /><h1>W10分組任務</h1>
 <script>
 function getDart(dirname){
-    source = "https://dartpad.github.io/embed-dart.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
-    document.getElementById("iframe").src = source ;
-}
-function getMyDart(dirname){
     source = "https://dartpad.github.io/embed-dart.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
     document.getElementById("iframe").src = source ;
 }
 
 function getHtmlDart(dirname){
-    source = "https://dartpad.github.io/embed-html.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-html.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
 document.getElementById("iframe").src = source ;
 }
 
 function getFlutter(dirname){
-    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=mdecourse&gh_repo=cp2019&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
+    source = "https://dartpad.github.io/embed-flutter.html?gh_owner=s40523124&gh_repo=cp2019bg1&gh_path=downloads/dart_ex/" + dirname + "&theme=dark";
 document.getElementById("iframe").src = source ;
 }
 
@@ -187,12 +187,12 @@ document.getElementById("iframe").height = 600 ;
 </script>
 <!-- 取 Dart 程式的按鈕 -->
 <h4>純 Dart 程式</h4>
-<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button> <button onclick="getMyDart('w10')">temp-translarion</button></p>
+<p><button onclick="getDart('hello')">Hello</button> <button onclick="getDart('for')">For Loop</button> <button onclick="getDart('sum')">Sum</button> <button onclick="getDart('runge_kutta')">Runge-Kutta</button> <button onclick="getDart('rk_ex1')">RK ex1</button> <button onclick="getDart('mass_spring_damping')">Mass Spring Damping</button></p>
 <h4>Html 程式</h4>
-<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button></p>
+<p><button onclick="getHtmlDart('roc_flag')">ROC Flag</button> <button onclick="getHtmlDart('grid')">Grid</button> <button onclick="getHtmlDart('xyplot')">X-Y Plot</button> <button onclick="getHtmlDart('slithery')">Slithery</button> <button onclick="getHtmlDart('rabbit-count')">Rabbit-Count</button> <button onclick="getHtmlDart('w10')">華氏溫度轉換</button></p>
 <h4>Flutter 程式</h4>
 <p><button onclick="getFlutter('flutter1')">Flutter1</button> <button onclick="getFlutter('flutter2')">Flutter2</button> <button onclick="getFlutter('flutter3')">Flutter3</button></p>
-<!-- 內建放入的 Dart 原始碼 -->
+<p><button onclick="getDart('mass_spring_damping')"><!-- 內建放入的 Dart 原始碼 --></button></p>
 <p><button onclick="largest()">放大</button> <button onclick="original()">回復</button></p>
 <p><br/><iframe height="600" id="iframe" src="https://dartpad.dartlang.org/embed-dart.html?gh_owner=mdecourse&amp;gh_repo=cp2019&amp;gh_path=downloads/dart_ex/mass_spring_damping&amp;theme=dark" width="800"></iframe></p>
 <br />W13 << <a href='W13.html'>Previous</a> <a href='W11.html'>Next</a> >> W11</div>
